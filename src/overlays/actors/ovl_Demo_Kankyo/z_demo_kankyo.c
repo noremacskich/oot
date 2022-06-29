@@ -203,7 +203,7 @@ void DemoKankyo_Init(Actor* thisx, PlayState* play) {
                     D_8098CF80 = 14;
                     sRainScale = 8;
                     break;
-                case SCENE_SPOT00:
+                case SCENE_HYRULE_FIELD:
                     D_8098CF80 = 1;
                     sRainScale = 5;
                     break;
@@ -499,7 +499,7 @@ void func_80989B54(Actor* thisx, PlayState* play, s16 i) {
             this->unk_150[i].unk_0.y = 10.0f;
             this->unk_150[i].unk_0.z = (Rand_ZeroOne() - 0.5f) * 180.0f;
             break;
-        case SCENE_SPOT00:
+        case SCENE_HYRULE_FIELD:
             this->unk_150[i].unk_0.x = (Rand_ZeroOne() - 0.5f) * 600.0f;
             this->unk_150[i].unk_0.y = -500.0f;
             this->unk_150[i].unk_0.z = (Rand_ZeroOne() - 0.5f) * 600.0f;

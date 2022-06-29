@@ -17,7 +17,7 @@ typedef struct {
 } RestrictionFlags;
 
 static RestrictionFlags sRestrictionFlags[] = {
-    { SCENE_SPOT00, 0x00, 0x00, 0x10 },
+    { SCENE_HYRULE_FIELD, 0x00, 0x00, 0x10 },
     { SCENE_SPOT01, 0x00, 0x00, 0x10 },
     { SCENE_SPOT02, 0x00, 0x00, 0x10 },
     { SCENE_SPOT03, 0x00, 0x00, 0x10 },
@@ -405,7 +405,7 @@ void func_80082850(PlayState* play, s16 maxAlpha) {
             }
 
             switch (play->sceneNum) {
-                case SCENE_SPOT00:
+                case SCENE_HYRULE_FIELD:
                 case SCENE_SPOT01:
                 case SCENE_SPOT02:
                 case SCENE_SPOT03:
@@ -3949,7 +3949,7 @@ void Interface_Update(PlayState* play) {
             }
 
             switch (play->sceneNum) {
-                case SCENE_SPOT00:
+                case SCENE_HYRULE_FIELD:
                 case SCENE_SPOT01:
                 case SCENE_SPOT02:
                 case SCENE_SPOT03:

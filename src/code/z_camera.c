@@ -7617,7 +7617,7 @@ Vec3s Camera_Update(Camera* camera) {
 
     Camera_UpdateDistortion(camera);
 
-    if ((camera->play->sceneNum == SCENE_SPOT00) && (camera->fov < 59.0f)) {
+    if ((camera->play->sceneNum == SCENE_HYRULE_FIELD) && (camera->fov < 59.0f)) {
         View_SetScale(&camera->play->view, 0.79f);
     } else {
         View_SetScale(&camera->play->view, 1.0f);

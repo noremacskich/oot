@@ -3341,7 +3341,7 @@ void Actor_SetTextWithPrefix(PlayState* play, Actor* actor, s16 baseTextId) {
             prefix = 0x1000;
             break;
         case SCENE_MALON_STABLE:
-        case SCENE_SPOT00:
+        case SCENE_HYRULE_FIELD:
         case SCENE_SPOT20:
             prefix = 0x2000;
             break;

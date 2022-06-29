@@ -1,4 +1,4 @@
-#include "global.h"
+    #include "global.h"
 #include "vt.h"
 
 s32 gScreenWidth = SCREEN_WIDTH;

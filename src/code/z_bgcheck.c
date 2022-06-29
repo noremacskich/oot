@@ -1430,7 +1430,7 @@ u32 BgCheck_InitializeStaticLookup(CollisionContext* colCtx, PlayState* play, St
  */
 s32 BgCheck_IsSpotScene(PlayState* play) {
     static s16 spotScenes[] = {
-        SCENE_SPOT00, SCENE_SPOT01, SCENE_SPOT02, SCENE_SPOT03, SCENE_SPOT04, SCENE_SPOT05, SCENE_SPOT06,
+        SCENE_HYRULE_FIELD, SCENE_SPOT01, SCENE_SPOT02, SCENE_SPOT03, SCENE_SPOT04, SCENE_SPOT05, SCENE_SPOT06,
         SCENE_SPOT07, SCENE_SPOT08, SCENE_SPOT09, SCENE_SPOT10, SCENE_SPOT11, SCENE_SPOT12, SCENE_SPOT13,
         SCENE_SPOT15, SCENE_SPOT16, SCENE_SPOT17, SCENE_SPOT18, SCENE_SPOT20,
     };
@@ -1454,7 +1454,7 @@ typedef struct {
  */
 s32 BgCheck_TryGetCustomMemsize(s32 sceneId, u32* memSize) {
     static BgCheckSceneMemEntry sceneMemList[] = {
-        { SCENE_SPOT00, 0xB798 },     { SCENE_GANON_FINAL, 0x78C8 }, { SCENE_GANON_DEMO, 0x70C8 },
+        { SCENE_HYRULE_FIELD, 0xB798 },     { SCENE_GANON_FINAL, 0x78C8 }, { SCENE_GANON_DEMO, 0x70C8 },
         { SCENE_JYASINBOSS, 0xACC8 }, { SCENE_KENJYANOMA, 0x70C8 },  { SCENE_JYASINZOU, 0x16CC8 },
         { SCENE_HIDAN, 0x198C8 },     { SCENE_GANON_BOSS, 0x84C8 },
     };

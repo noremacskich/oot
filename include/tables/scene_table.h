@@ -90,7 +90,7 @@
 /* 0x4E */ DEFINE_SCENE(mahouya_scene, g_pn_24, SCENE_MAHOUYA, SDC_MAHOUYA, 0, 0)
 /* 0x4F */ DEFINE_SCENE(ganon_demo_scene, none, SCENE_GANON_DEMO, SDC_GANON_CASTLE_EXTERIOR, 0, 0)
 /* 0x50 */ DEFINE_SCENE(kinsuta_scene, g_pn_22, SCENE_KINSUTA, SDC_DEFAULT, 0, 0)
-/* 0x51 */ DEFINE_SCENE(spot00_scene, g_pn_27, SCENE_SPOT00, SDC_SPOT00, 0, 0)
+/* 0x51 */ DEFINE_SCENE(spot00_scene, g_pn_27, SCENE_HYRULE_FIELD, SDC_SPOT00, 0, 0)
 /* 0x52 */ DEFINE_SCENE(spot01_scene, g_pn_28, SCENE_SPOT01, SDC_SPOT01, 0, 0)
 /* 0x53 */ DEFINE_SCENE(spot02_scene, g_pn_29, SCENE_SPOT02, SDC_DEFAULT, 0, 0)
 /* 0x54 */ DEFINE_SCENE(spot03_scene, g_pn_30, SCENE_SPOT03, SDC_SPOT03, 0, 0)

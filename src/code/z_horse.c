@@ -3,7 +3,7 @@
 #include "src/overlays/actors/ovl_En_Horse/z_en_horse.h"
 
 s32 func_8006CFC0(s32 scene) {
-    s32 validScenes[] = { SCENE_SPOT00, SCENE_SPOT06, SCENE_SPOT09, SCENE_SPOT12, SCENE_SPOT20 };
+    s32 validScenes[] = { SCENE_HYRULE_FIELD, SCENE_SPOT06, SCENE_SPOT09, SCENE_SPOT12, SCENE_SPOT20 };
     s32 i;
 
     for (i = 0; i < ARRAY_COUNT(validScenes); i++) {
@@ -16,7 +16,7 @@ s32 func_8006CFC0(s32 scene) {
 }
 
 void func_8006D074(PlayState* play) {
-    gSaveContext.horseData.scene = SCENE_SPOT00;
+    gSaveContext.horseData.scene = SCENE_HYRULE_FIELD;
     gSaveContext.horseData.pos.x = -1840;
     gSaveContext.horseData.pos.y = 72;
     gSaveContext.horseData.pos.z = 5497;
@@ -43,7 +43,7 @@ typedef struct {
 void func_8006D0EC(PlayState* play, Player* player) {
     s32 i;
     HorseSpawn horseSpawns[] = {
-        { SCENE_SPOT00, -460, 100, 6640, 0, 2 }, { SCENE_SPOT06, -1929, -1025, 768, 0, 2 },
+        { SCENE_HYRULE_FIELD, -460, 100, 6640, 0, 2 }, { SCENE_SPOT06, -1929, -1025, 768, 0, 2 },
         { SCENE_SPOT09, 2566, -259, 767, 0, 2 }, { SCENE_SPOT12, -328, 10, 953, 0, 2 },
         { SCENE_SPOT20, 928, 0, -2280, 0, 2 },
     };
@@ -176,10 +176,10 @@ void func_8006D684(PlayState* play, Player* player) {
             { SCENE_SPOT20, 0xFFF0, { -250, 1, -1580 }, 0x4000, 6 },
             { SCENE_SPOT20, 0xFFF1, { 0, 0, 0 }, 0x0000, 5 },
             { SCENE_SPOT20, 0xFFF5, { 0, 0, 0 }, 0x0000, 7 },
-            { SCENE_SPOT00, 0xFFF3, { -2961, 313, 7700 }, 0x0000, 7 },
-            { SCENE_SPOT00, 0xFFF4, { -1900, 313, 7015 }, 0x0000, 7 },
-            { SCENE_SPOT00, 0xFFF5, { -4043, 313, 6933 }, 0x0000, 7 },
-            { SCENE_SPOT00, 0xFFF6, { -4043, 313, 6933 }, 0x0000, 7 },
+            { SCENE_HYRULE_FIELD, 0xFFF3, { -2961, 313, 7700 }, 0x0000, 7 },
+            { SCENE_HYRULE_FIELD, 0xFFF4, { -1900, 313, 7015 }, 0x0000, 7 },
+            { SCENE_HYRULE_FIELD, 0xFFF5, { -4043, 313, 6933 }, 0x0000, 7 },
+            { SCENE_HYRULE_FIELD, 0xFFF6, { -4043, 313, 6933 }, 0x0000, 7 },
         };
 
         for (i = 0; i < ARRAY_COUNT(D_8011F9B8); i++) {

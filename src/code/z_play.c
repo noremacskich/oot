@@ -303,7 +303,7 @@ void Play_Init(GameState* thisx) {
     }
 
     tempSetupIndex = gSaveContext.sceneSetupIndex;
-    if ((gEntranceTable[((void)0, gSaveContext.entranceIndex)].scene == SCENE_SPOT00) && !LINK_IS_ADULT &&
+    if ((gEntranceTable[((void)0, gSaveContext.entranceIndex)].scene == SCENE_HYRULE_FIELD) && !LINK_IS_ADULT &&
         gSaveContext.sceneSetupIndex < 4) {
         if (CHECK_QUEST_ITEM(QUEST_KOKIRI_EMERALD) && CHECK_QUEST_ITEM(QUEST_GORON_RUBY) &&
             CHECK_QUEST_ITEM(QUEST_ZORA_SAPPHIRE)) {

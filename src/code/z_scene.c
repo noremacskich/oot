@@ -38,7 +38,7 @@ void Object_InitBank(PlayState* play, ObjectContext* objectCtx) {
     u32 spaceSize;
     s32 i;
 
-    if (play2->sceneNum == SCENE_SPOT00) {
+    if (play2->sceneNum == SCENE_HYRULE_FIELD) {
         spaceSize = 1024000;
     } else if (play2->sceneNum == SCENE_GANON_DEMO) {
         if (gSaveContext.sceneSetupIndex != 4) {
@@ -456,7 +456,7 @@ void Scene_CommandMiscSettings(PlayState* play, SceneCmd* cmd) {
         }
     }
 
-    if (((play->sceneNum >= SCENE_SPOT00) && (play->sceneNum <= SCENE_GANON_TOU)) ||
+    if (((play->sceneNum >= SCENE_HYRULE_FIELD) && (play->sceneNum <= SCENE_GANON_TOU)) ||
         ((play->sceneNum >= SCENE_ENTRA) && (play->sceneNum <= SCENE_SHRINE_R))) {
         if (gSaveContext.cutsceneIndex < 0xFFF0) {
             gSaveContext.worldMapAreaData |= gBitFlags[gSaveContext.worldMapArea];

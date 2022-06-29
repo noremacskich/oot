@@ -490,7 +490,7 @@ void Cutscene_Command_Terminator(PlayState* play, CutsceneContext* csCtx, CsCmdB
     s32 temp = 0;
 
     if ((gSaveContext.gameMode != GAMEMODE_NORMAL) && (gSaveContext.gameMode != GAMEMODE_END_CREDITS) &&
-        (play->sceneNum != SCENE_SPOT00) && (csCtx->frames > 20) &&
+        (play->sceneNum != SCENE_HYRULE_FIELD) && (csCtx->frames > 20) &&
         (CHECK_BTN_ALL(play->state.input[0].press.button, BTN_A) ||
          CHECK_BTN_ALL(play->state.input[0].press.button, BTN_B) ||
          CHECK_BTN_ALL(play->state.input[0].press.button, BTN_START)) &&

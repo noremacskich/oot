@@ -88,7 +88,7 @@ void Map_InitData(PlayState* play, s16 room) {
     s16 extendedMapIndex;
 
     switch (play->sceneNum) {
-        case SCENE_SPOT00:
+        case SCENE_HYRULE_FIELD:
         case SCENE_SPOT01:
         case SCENE_SPOT02:
         case SCENE_SPOT03:
@@ -238,7 +238,7 @@ void Map_Init(PlayState* play) {
     ASSERT(interfaceCtx->mapSegment != NULL, "parameter->mapSegment != NULL", "../z_map_exp.c", 459);
 
     switch (play->sceneNum) {
-        case SCENE_SPOT00:
+        case SCENE_HYRULE_FIELD:
         case SCENE_SPOT01:
         case SCENE_SPOT02:
         case SCENE_SPOT03:
@@ -258,7 +258,7 @@ void Map_Init(PlayState* play) {
         case SCENE_SPOT18:
         case SCENE_SPOT20:
         case SCENE_GANON_TOU:
-            mapIndex = play->sceneNum - SCENE_SPOT00;
+            mapIndex = play->sceneNum - SCENE_HYRULE_FIELD;
             R_MAP_INDEX = gSaveContext.mapIndex = mapIndex;
             R_COMPASS_SCALE_X = gMapData->owCompassInfo[mapIndex][0];
             R_COMPASS_SCALE_Y = gMapData->owCompassInfo[mapIndex][1];
@@ -416,7 +416,7 @@ void Minimap_Draw(PlayState* play) {
                 }
 
                 break;
-            case SCENE_SPOT00:
+            case SCENE_HYRULE_FIELD:
             case SCENE_SPOT01:
             case SCENE_SPOT02:
             case SCENE_SPOT03:
