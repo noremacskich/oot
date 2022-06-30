@@ -52,7 +52,7 @@ CutsceneStateHandler sCsStateHandlers2[] = {
 u8 sTitleCsState = 0;
 
 EntranceCutscene sEntranceCutsceneTable[] = {
-    { ENTR_SPOT00_3, 2, EVENTCHKINF_A0, gHyruleFieldIntroCs },
+    { ENTR_HYRULE_FIELD_3, 2, EVENTCHKINF_A0, gHyruleFieldIntroCs },
     { ENTR_SPOT16_0, 2, EVENTCHKINF_A1, gDMTIntroCs },
     { ENTR_SPOT01_0, 2, EVENTCHKINF_A3, gKakarikoVillageIntroCs },
     { ENTR_SPOT07_0, 2, EVENTCHKINF_A4, gZorasDomainIntroCs },
@@ -60,11 +60,11 @@ EntranceCutscene sEntranceCutsceneTable[] = {
     { ENTR_SPOT18_0, 2, EVENTCHKINF_A6, gGoronCityIntroCs },
     { ENTR_TOKINOMA_0, 2, EVENTCHKINF_A7, gTempleOfTimeIntroCs },
     { ENTR_YDAN_0, 2, EVENTCHKINF_A8, gDekuTreeIntroCs },
-    { ENTR_SPOT00_11, 0, EVENTCHKINF_18, gHyruleFieldSouthEponaJumpCs },
-    { ENTR_SPOT00_13, 0, EVENTCHKINF_18, gHyruleFieldEastEponaJumpCs },
-    { ENTR_SPOT00_12, 0, EVENTCHKINF_18, gHyruleFieldWestEponaJumpCs },
-    { ENTR_SPOT00_15, 0, EVENTCHKINF_18, gHyruleFieldGateEponaJumpCs },
-    { ENTR_SPOT00_16, 1, EVENTCHKINF_A9, gHyruleFieldGetOoTCs },
+    { ENTR_HYRULE_FIELD_11, 0, EVENTCHKINF_18, gHyruleFieldSouthEponaJumpCs },
+    { ENTR_HYRULE_FIELD_13, 0, EVENTCHKINF_18, gHyruleFieldEastEponaJumpCs },
+    { ENTR_HYRULE_FIELD_12, 0, EVENTCHKINF_18, gHyruleFieldWestEponaJumpCs },
+    { ENTR_HYRULE_FIELD_15, 0, EVENTCHKINF_18, gHyruleFieldGateEponaJumpCs },
+    { ENTR_HYRULE_FIELD_16, 1, EVENTCHKINF_A9, gHyruleFieldGetOoTCs },
     { ENTR_SPOT06_0, 2, EVENTCHKINF_B1, gLakeHyliaIntroCs },
     { ENTR_SPOT09_0, 2, EVENTCHKINF_B2, gGerudoValleyIntroCs },
     { ENTR_SPOT12_0, 2, EVENTCHKINF_B3, gGerudoFortressIntroCs },
@@ -821,7 +821,7 @@ void Cutscene_Command_Terminator(PlayState* play, CutsceneContext* csCtx, CsCmdB
                 play->transitionType = TRANS_TYPE_INSTANT;
                 break;
             case 53:
-                play->nextEntranceIndex = ENTR_SPOT00_16;
+                play->nextEntranceIndex = ENTR_HYRULE_FIELD_16;
                 play->transitionTrigger = TRANS_TRIGGER_START;
                 play->transitionType = TRANS_TYPE_FADE_WHITE;
                 break;
@@ -908,7 +908,7 @@ void Cutscene_Command_Terminator(PlayState* play, CutsceneContext* csCtx, CsCmdB
                 play->transitionType = TRANS_TYPE_FADE_BLACK;
                 break;
             case 67:
-                play->nextEntranceIndex = ENTR_SPOT00_9;
+                play->nextEntranceIndex = ENTR_HYRULE_FIELD_9;
                 play->transitionTrigger = TRANS_TRIGGER_START;
                 play->transitionType = TRANS_TYPE_FADE_BLACK;
                 break;
@@ -1184,12 +1184,12 @@ void Cutscene_Command_Terminator(PlayState* play, CutsceneContext* csCtx, CsCmdB
                 }
                 break;
             case 114:
-                play->nextEntranceIndex = ENTR_SPOT00_3;
+                play->nextEntranceIndex = ENTR_HYRULE_FIELD_3;
                 play->transitionTrigger = TRANS_TRIGGER_START;
                 play->transitionType = TRANS_TYPE_FADE_BLACK;
                 break;
             case 115:
-                play->nextEntranceIndex = ENTR_SPOT00_17;
+                play->nextEntranceIndex = ENTR_HYRULE_FIELD_17;
                 play->transitionTrigger = TRANS_TRIGGER_START;
                 play->transitionType = TRANS_TYPE_FADE_BLACK;
                 gSaveContext.nextTransitionType = TRANS_TYPE_FADE_BLACK;

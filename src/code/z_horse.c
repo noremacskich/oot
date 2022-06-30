@@ -130,8 +130,8 @@ void func_8006D684(PlayState* play, Player* player) {
     s32 i;
     Vec3s spawnPos;
 
-    if ((gSaveContext.entranceIndex == ENTR_SPOT00_11 || gSaveContext.entranceIndex == ENTR_SPOT00_12 ||
-         gSaveContext.entranceIndex == ENTR_SPOT00_13 || gSaveContext.entranceIndex == ENTR_SPOT00_15) &&
+    if ((gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_11 || gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_12 ||
+         gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_13 || gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_15) &&
         (gSaveContext.respawnFlag == 0)) {
         Vec3s spawnPositions[] = {
             { -2961, 313, 7700 },
@@ -140,11 +140,11 @@ void func_8006D684(PlayState* play, Player* player) {
             { -2313, 313, 5990 },
         };
 
-        if (gSaveContext.entranceIndex == ENTR_SPOT00_11) {
+        if (gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_11) {
             spawnPos = spawnPositions[0];
-        } else if (gSaveContext.entranceIndex == ENTR_SPOT00_12) {
+        } else if (gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_12) {
             spawnPos = spawnPositions[1];
-        } else if (gSaveContext.entranceIndex == ENTR_SPOT00_13) {
+        } else if (gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_13) {
             spawnPos = spawnPositions[2];
         } else {
             spawnPos = spawnPositions[3];
@@ -248,8 +248,8 @@ void func_8006DC68(PlayState* play, Player* player) {
 
         if (func_8006CFC0(play->sceneNum)) {
             if ((gSaveContext.sceneSetupIndex > 3) ||
-                ((gSaveContext.entranceIndex == ENTR_SPOT00_11 || gSaveContext.entranceIndex == ENTR_SPOT00_12 ||
-                  gSaveContext.entranceIndex == ENTR_SPOT00_13 || gSaveContext.entranceIndex == ENTR_SPOT00_15) &&
+                ((gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_11 || gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_12 ||
+                  gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_13 || gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_15) &&
                  (gSaveContext.respawnFlag == 0)) ||
                 ((play->sceneNum == SCENE_SPOT20) && (GET_EVENTINF_HORSES_STATE() == EVENTINF_HORSES_STATE_6) &&
                  !Flags_GetEventChkInf(EVENTCHKINF_18) && (DREG(1) == 0))) {

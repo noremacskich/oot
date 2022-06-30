@@ -1714,9 +1714,9 @@ void Play_LoadToLastEntrance(PlayState* this) {
         (this->sceneNum == SCENE_GANONTIKA_SONOGO) || (this->sceneNum == SCENE_GANON_DEMO)) {
         this->nextEntranceIndex = ENTR_GANON_FINAL_0;
         Item_Give(this, ITEM_SWORD_MASTER);
-    } else if ((gSaveContext.entranceIndex == ENTR_SPOT00_11) || (gSaveContext.entranceIndex == ENTR_SPOT00_12) ||
-               (gSaveContext.entranceIndex == ENTR_SPOT00_13) || (gSaveContext.entranceIndex == ENTR_SPOT00_15)) {
-        this->nextEntranceIndex = ENTR_SPOT00_6;
+    } else if ((gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_11) || (gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_12) ||
+               (gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_13) || (gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_15)) {
+        this->nextEntranceIndex = ENTR_HYRULE_FIELD_6;
     } else {
         this->nextEntranceIndex = gSaveContext.entranceIndex;
     }
