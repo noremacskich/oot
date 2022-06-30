@@ -221,7 +221,7 @@ void BgSpot00Hanebasi_Update(Actor* thisx, PlayState* play) {
                     Flags_SetEventChkInf(EVENTCHKINF_82);
                     this->actionFunc = BgSpot00Hanebasi_DoNothing;
                     func_8002DF54(play, &player->actor, 8);
-                    play->nextEntranceIndex = ENTR_SPOT00_0;
+                    play->nextEntranceIndex = ENTR_HYRULE_FIELD_0;
                     gSaveContext.nextCutsceneIndex = 0xFFF1;
                     play->transitionTrigger = TRANS_TRIGGER_START;
                     play->transitionType = TRANS_TYPE_FADE_BLACK_FAST;

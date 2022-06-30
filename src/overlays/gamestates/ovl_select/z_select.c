@@ -45,7 +45,7 @@ void MapSelect_LoadGame(MapSelectState* this, s32 entranceIndex) {
 // "Translation" (Actual name)
 static SceneSelectEntry sScenes[] = {
     // "1: SPOT00" (Hyrule Field)
-    { " 1:SPOT00", MapSelect_LoadGame, ENTR_SPOT00_0 },
+    { " 1:SPOT00", MapSelect_LoadGame, ENTR_HYRULE_FIELD_0 },
     // "2: SPOT01" (Kakariko Village)
     { " 2:SPOT01", MapSelect_LoadGame, ENTR_SPOT01_0 },
     // "3: SPOT02" (Graveyard)

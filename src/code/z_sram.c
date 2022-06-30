@@ -294,7 +294,7 @@ void Sram_InitDebugSave(void) {
         }
     }
 
-    gSaveContext.entranceIndex = ENTR_SPOT00_0;
+    gSaveContext.entranceIndex = ENTR_HYRULE_FIELD_0;
     gSaveContext.magicLevel = 0;
     gSaveContext.sceneFlags[5].swch = 0x40000000;
 }

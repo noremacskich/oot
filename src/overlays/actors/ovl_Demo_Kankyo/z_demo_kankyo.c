@@ -558,7 +558,7 @@ void DemoKankyo_DrawRain(Actor* thisx, PlayState* play) {
                     if (this->unk_150[i].unk_C.y + this->unk_150[i].unk_0.y < temp_f12_2 - 300.0f) {
                         this->unk_150[i].unk_22++;
                     }
-                } else if (gSaveContext.entranceIndex == ENTR_SPOT00_0) {
+                } else if (gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_0) {
                     if (temp_f12_2 + 300.0f < this->unk_150[i].unk_C.y + this->unk_150[i].unk_0.y) {
                         this->unk_150[i].unk_22++;
                     }
@@ -584,7 +584,7 @@ void DemoKankyo_DrawRain(Actor* thisx, PlayState* play) {
 
         gDPPipeSync(POLY_XLU_DISP++);
 
-        if (gSaveContext.entranceIndex == ENTR_SPOT00_0) {
+        if (gSaveContext.entranceIndex == ENTR_HYRULE_FIELD_0) {
             gDPSetPrimColor(POLY_XLU_DISP++, 0, 0, 255, 255, 255, 255);
             gDPSetEnvColor(POLY_XLU_DISP++, 255, 255, 0, 255);
         } else {
